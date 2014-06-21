@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Renren2</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <style>
+        /*.left-sidebar {*/
+            /*background: lightblue;*/
+        /*}*/
+        /*.right-sidebar{*/
+            /*background: lightgoldenrodyellow;*/
+        /*}*/
+        /*.content{*/
+            /*background: lightpink;*/
+        /*}*/
+        .visitor {
+            display: inline-block;
+        }
+        .recommend {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav nav-left">
+        <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="">人人网</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="www.renren.com">首页</a></li>
+                <li class="dropdown">
+                    <a data-toggle="dropdown" href="#">个人主页 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="javascript:void(0)">装扮主页</a></li>
+                        <li><a href="javascript:void(0)">修改资料</a></li>
+                    </ul>
+                </li>
+                <li><a href="www.renren.com">好友</a></li>
+                <li><a href="www.renren.com">应用</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">账号管理</a></li>
+            </ul>
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="找人">
+                </div>
+                <button type="submit" class="btn btn-default">搜索</button>
+            </form>
+
+        </div>
+    </div>
+    </div>
+    <div class="container main-content">
+    <div class="row">
+        <div class="left-sidebar col-lg-2">
+            <article class="user-info row">
+                <section class="col-lg-3">
+                    <img src="imgs/avatar.jpg" alt=""/>
+                </section>
+                <section class="info col-lg-3">
+                    <span>Renren</span>
+                    <span>一天</span>
+                </section>
+            </article>
+            <acticle class="common-use">
+                <span>我的常用</span>
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="javascript:void(0)">新鲜事</a></li>
+                    <li><a href="javascript:void(0)">与我相关</a></li>
+                    <li><a href="javascript:void(0)">相册</a></li>
+                    <li><a href="javascript:void(0)">好友</a></li>
+                    <li><a href="javascript:void(0)">校园广场</a></li>
+                    <li><a href="javascript:void(0)">分享</a></li>
+                    <li><a href="javascript:void(0)">日志</a></li>
+                </ul>
+            </acticle>
+            <acticle class="friend-group">
+                <span>我的分组</span>
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="javascript:void(0)">大学同学</a></li>
+                    <li><a href="javascript:void(0)">高中同学</a></li>
+                    <li><a href="javascript:void(0)">中学同学</a></li>
+                    <li><a href="javascript:void(0)">家人亲戚</a></li>
+                    <li><a href="javascript:void(0)">至交好友</a></li>
+                </ul>
+            </acticle>
+            <acticle class="in-use">
+                <span>我使用的</span>
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="javascript:void(0)">应用中心</a></li>
+                    <li><a href="javascript:void(0)">网页游戏</a></li>
+                    <li><a href="javascript:void(0)">公共主页</a></li>
+                    <li><a href="javascript:void(0)">小站</a></li>
+                    <li><a href="javascript:void(0)">小组</a></li>
+                    <li><a href="javascript:void(0)">通讯录</a></li>
+                    <li><a href="javascript:void(0)">记事本</a></li>
+                </ul>
+            </acticle>
+            <acticle class="hot-apps">
+                <span>热门应用</span>
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="javascrpit:void(0)">2014巴西世界杯</a></li>
+                    <li><a href="javascrpit:void(0)">德克萨斯扑克</a></li>
+                    <li><a href="javascrpit:void(0)">女神联盟</a></li>
+                    <li><a href="javascrpit:void(0)">仙侠道</a></li>
+                    <li><a href="javascrpit:void(0)">绝色唐门</a></li>
+                </ul>
+            </acticle>
+        </div>
+        <div class="content col-lg-7">
+            <article class="global-publish">
+                <ul class="publish-option-group nav nav-tabs">
+                    <li class="publish active" data-toggle="tab" data-target=".publish-status"><a href="javascript:void(0)">发状态</a></li>
+                    <li class="upload" data-toggle="tab" data-target=".upload-photo"><a href="#uploadPhoto">传照片</a></li>
+                    <li class="share" data-toggle="tab" data-target=".share-moment"><a href="javascript:void(0)">发分享</a></li>
+                    <li class="comment" data-toggle="tab" data-target=".comment-film"><a href="javascript:void(0)">评电影</a></li>
+                    <li class="diary" data-toggle="tab" data-target=".write-diary"><a href="javascript:void(0)">写日志</a></li>
+                </ul>
+                <div class="tab-content">
+                    <section class="tab-pane active publish-status">
+                        <input type="text" placeholder="你正在干嘛"/>
+                    </section>
+                    <section class="tab-pane  upload-photo">
+                        <input type="text" placeholder="写照片描述"/>
+                    </section>
+                    <section class="tab-pane  share-moment">
+                        <input type="text" placeholder="我的评论"/>
+                    </section>
+                    <section class="tab-pane  comment-film">
+                        <input type="text" placeholder="我的影评"/>
+                    </section>
+                    <section class="tab-pane write-diary">
+                        <input type="text" placeholder=""/>
+                    </section>
+                </div>
+
+            </article>
+            <ul class="nav nav-tabs">
+                <li class="active" data-toggle="tab" data-target=".feed-list"><a href="javascript:void(0)">新鲜事</a></li>
+                <li data-toggle="tab" data-target=".special-focus"><a href="javascript:void(0)">特别关注</a></li>
+                <li data-toggle="tab" data-target=".content-focus"><a href="javascript:void(0)">关注内容</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <article class="tab-pane feed-list active">
+                    <ul style="list-style: none">
+                        <li class="feed">
+                            <article>
+                                <div class="row">
+                                    <div class="col-lg-1">
+                                        <figure><a href="www.baidu.com"><img src="imgs/tiny-visitor.jpg" alt=""/></a></figure>
+                                    </div>
+                                    <div class="col-lg-11">
+                                        <strong class="clearfix">不正常人类研究中心</strong>
+                                        <span class="clearfix">名叫小默，不知道是哪个卖家把名字写开了，今天一快递打电话，我接起来说喂，他说您好，是小黑犬吗。。。我打不死你。。</span>
+                                        <section>
+                                            <img src="imgs/dog.jpg" alt=""/>
+                                            <div>
+                                                <span>今天</span><span>16:43</span>
+                                                <span>搞笑</span>
+                                            </div>
+                                            <div class="pull-right">
+                                                <a href="#">回复</a>
+                                                <a href="#">赞</a>
+                                                <a href="#">分享</a>
+                                            </div>
+                                            <input type="text" placeholder="评论..." style="width: 100%"/>
+                                        </section>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="feed">
+                            <article>
+                                <div class="row">
+                                    <div class="col-lg-1">
+                                        <figure><a href="www.baidu.com"><img src="imgs/tiny-visitor.jpg" alt=""/></a></figure>
+                                    </div>
+                                    <div class="col-lg-11">
+                                        <strong class="clearfix">不正常人类研究中心</strong>
+                                        <span class="clearfix">名叫小默，不知道是哪个卖家把名字写开了，今天一快递打电话，我接起来说喂，他说您好，是小黑犬吗。。。我打不死你。。</span>
+                                        <section>
+                                            <img src="imgs/dog.jpg" alt=""/>
+                                            <div>
+                                                <span>今天</span><span>16:43</span>
+                                                <span>搞笑</span>
+                                            </div>
+                                            <div class="pull-right">
+                                                <a href="#">回复</a>
+                                                <a href="#">赞</a>
+                                                <a href="#">分享</a>
+                                            </div>
+                                            <input type="text" placeholder="评论..." style="width: 100%"/>
+                                        </section>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="feed">
+                            <article>
+                                <div class="row">
+                                    <div class="col-lg-1">
+                                        <figure><a href="www.baidu.com"><img src="imgs/tiny-visitor.jpg" alt=""/></a></figure>
+                                    </div>
+                                    <div class="col-lg-11">
+                                        <strong class="clearfix">不正常人类研究中心</strong>
+                                        <span class="clearfix">名叫小默，不知道是哪个卖家把名字写开了，今天一快递打电话，我接起来说喂，他说您好，是小黑犬吗。。。我打不死你。。</span>
+                                        <section>
+                                            <img src="imgs/dog.jpg" alt=""/>
+                                            <div>
+                                                <span>今天</span><span>16:43</span>
+                                                <span>搞笑</span>
+                                            </div>
+                                            <div class="pull-right">
+                                                <a href="#">回复</a>
+                                                <a href="#">赞</a>
+                                                <a href="#">分享</a>
+                                            </div>
+                                            <input type="text" placeholder="评论..." style="width: 100%"/>
+                                        </section>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="feed">
+                            <article>
+                                <div class="row">
+                                    <div class="col-lg-1">
+                                        <figure><a href="www.baidu.com"><img src="imgs/tiny-visitor.jpg" alt=""/></a></figure>
+                                    </div>
+                                    <div class="col-lg-11">
+                                        <strong class="clearfix">不正常人类研究中心</strong>
+                                        <span class="clearfix">名叫小默，不知道是哪个卖家把名字写开了，今天一快递打电话，我接起来说喂，他说您好，是小黑犬吗。。。我打不死你。。</span>
+                                        <section>
+                                            <img src="imgs/dog.jpg" alt=""/>
+                                            <div>
+                                                <span>今天</span><span>16:43</span>
+                                                <span>搞笑</span>
+                                            </div>
+                                            <div class="pull-right">
+                                                <a href="#">回复</a>
+                                                <a href="#">赞</a>
+                                                <a href="#">分享</a>
+                                            </div>
+                                            <input type="text" placeholder="评论..." style="width: 100%"/>
+                                        </section>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="feed">
+                            <article>
+                                <div class="row">
+                                    <div class="col-lg-1">
+                                        <figure><a href="www.baidu.com"><img src="imgs/tiny-visitor.jpg" alt=""/></a></figure>
+                                    </div>
+                                    <div class="col-lg-11">
+                                        <strong class="clearfix">不正常人类研究中心</strong>
+                                        <span class="clearfix">名叫小默，不知道是哪个卖家把名字写开了，今天一快递打电话，我接起来说喂，他说您好，是小黑犬吗。。。我打不死你。。</span>
+                                        <section>
+                                            <img src="imgs/dog.jpg" alt=""/>
+                                            <div>
+                                                <span>今天</span><span>16:43</span>
+                                                <span>搞笑</span>
+                                            </div>
+                                            <div class="pull-right">
+                                                <a href="#">回复</a>
+                                                <a href="#">赞</a>
+                                                <a href="#">分享</a>
+                                            </div>
+                                            <input type="text" placeholder="评论..." style="width: 100%"/>
+                                        </section>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="feed">
+                            <article>
+                                <div class="row">
+                                    <div class="col-lg-1">
+                                        <figure><a href="www.baidu.com"><img src="imgs/tiny-visitor.jpg" alt=""/></a></figure>
+                                    </div>
+                                    <div class="col-lg-11">
+                                        <strong class="clearfix">不正常人类研究中心</strong>
+                                        <span class="clearfix">名叫小默，不知道是哪个卖家把名字写开了，今天一快递打电话，我接起来说喂，他说您好，是小黑犬吗。。。我打不死你。。</span>
+                                        <section>
+                                            <img src="imgs/dog.jpg" alt=""/>
+                                            <div>
+                                                <span>今天</span><span>16:43</span>
+                                                <span>搞笑</span>
+                                            </div>
+                                            <div class="pull-right">
+                                                <a href="#">回复</a>
+                                                <a href="#">赞</a>
+                                                <a href="#">分享</a>
+                                            </div>
+                                            <input type="text" placeholder="评论..." style="width: 100%"/>
+                                        </section>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="feed">
+                            <article>
+                                <div class="row">
+                                    <div class="col-lg-1">
+                                        <figure><a href="www.baidu.com"><img src="imgs/tiny-visitor.jpg" alt=""/></a></figure>
+                                    </div>
+                                    <div class="col-lg-11">
+                                        <strong class="clearfix">不正常人类研究中心</strong>
+                                        <span class="clearfix">名叫小默，不知道是哪个卖家把名字写开了，今天一快递打电话，我接起来说喂，他说您好，是小黑犬吗。。。我打不死你。。</span>
+                                        <section>
+                                            <img src="imgs/dog.jpg" alt=""/>
+                                            <div>
+                                                <span>今天</span><span>16:43</span>
+                                                <span>搞笑</span>
+                                            </div>
+                                            <div class="pull-right">
+                                                <a href="#">回复</a>
+                                                <a href="#">赞</a>
+                                                <a href="#">分享</a>
+                                            </div>
+                                            <input type="text" placeholder="评论..." style="width: 100%"/>
+                                        </section>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="feed">
+                            <article>
+                                <div class="row">
+                                    <div class="col-lg-1">
+                                        <figure><a href="www.baidu.com"><img src="imgs/tiny-visitor.jpg" alt=""/></a></figure>
+                                    </div>
+                                    <div class="col-lg-11">
+                                        <strong class="clearfix">不正常人类研究中心</strong>
+                                        <span class="clearfix">名叫小默，不知道是哪个卖家把名字写开了，今天一快递打电话，我接起来说喂，他说您好，是小黑犬吗。。。我打不死你。。</span>
+                                        <section>
+                                            <img src="imgs/dog.jpg" alt=""/>
+                                            <div>
+                                                <span>今天</span><span>16:43</span>
+                                                <span>搞笑</span>
+                                            </div>
+                                            <div class="pull-right">
+                                                <a href="#">回复</a>
+                                                <a href="#">赞</a>
+                                                <a href="#">分享</a>
+                                            </div>
+                                            <input type="text" placeholder="评论..." style="width: 100%"/>
+                                        </section>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="feed">
+                            <article>
+                                <div class="row">
+                                    <div class="col-lg-1">
+                                        <figure><a href="www.baidu.com"><img src="imgs/tiny-visitor.jpg" alt=""/></a></figure>
+                                    </div>
+                                    <div class="col-lg-11">
+                                        <strong class="clearfix">不正常人类研究中心</strong>
+                                        <span class="clearfix">名叫小默，不知道是哪个卖家把名字写开了，今天一快递打电话，我接起来说喂，他说您好，是小黑犬吗。。。我打不死你。。</span>
+                                        <section>
+                                            <img src="imgs/dog.jpg" alt=""/>
+                                            <div>
+                                                <span>今天</span><span>16:43</span>
+                                                <span>搞笑</span>
+                                            </div>
+                                            <div class="pull-right">
+                                                <a href="#">回复</a>
+                                                <a href="#">赞</a>
+                                                <a href="#">分享</a>
+                                            </div>
+                                            <input type="text" placeholder="评论..." style="width: 100%"/>
+                                        </section>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+
+                    </ul>
+                </article>
+                <article class="tab-pane special-focus" style="display: none">
+                    <ul>
+                        <li class="focus-item">我的特别关注</li>
+                        <li class="focus-item">我的特别关注</li>
+                        <li class="focus-item">我的特别关注</li>
+                        <li class="focus-item">我的特别关注</li>
+                        <li class="focus-item">我的特别关注</li>
+                    </ul>
+                </article>
+                <article class="tab-pane content-focus" style="display: none">
+                    <ul>
+                        <li class="content-item">特别关注的内容</li>
+                        <li class="content-item">特别关注的内容</li>
+                        <li class="content-item">特别关注的内容</li>
+                        <li class="content-item">特别关注的内容</li>
+                        <li class="content-item">特别关注的内容</li>
+                    </ul>
+                </article>
+            </div>
+
+
+        </div>
+        <div class="right-sidebar col-lg-3">
+            <article class="fortune">
+                <div class="row">
+                    <div class="col-lg-3 fortune-img">
+                        <!--<img src="imgs/fortuneImage.png" alt="" style="width: 30px;height: 40;background-position: -12px 10px"/>-->
+                        <a href="www.baidu.com" style="float:left;background-position: -10px -12px;background: url(imgs/fortuneImage.png)">www</a>
+                    </div>
+                    <div class="col-lg-6 fortune-amount">
+                        <span>总RP:</span><span class="amount-fortune">5</span>
+                        <span>今日RP值</span><span class="today-fortune">3</span>
+                    </div>
+                    <div class="col-lg-3 fortune-get">
+                        <span>刷新已得</span><span class="fortune-fresh-value">3</span>
+                    </div>
+                </div>
+            </article>
+            <article class="recent-come-to-visit">
+                <span>最近来访</span>
+                <ul style="list-style: none;">
+                    <li class="visitor"><a href="www.baidu.com"><img src="imgs/visitor.jpg" alt="vistor"/></a></li>
+                    <li class="visitor"><a href="www.baidu.com"><img src="imgs/visitor.jpg" alt="vistor"/></a></li>
+                    <li class="visitor"><a href="www.baidu.com"><img src="imgs/visitor.jpg" alt="vistor"/></a></li>
+                    <li class="visitor"><a href="www.baidu.com"><img src="imgs/visitor.jpg" alt="vistor"/></a></li>
+                </ul>
+            </article>
+            <article class="friend-recommend">
+                <span>好友推荐</span>
+                <ul>
+                    <li class="recommend"><a href="www.baidu.com"><img src="imgs/tiny-recommend.jpg" alt="vistor"/></a></li>
+                    <li class="recommend"><a href="www.baidu.com"><img src="imgs/tiny-recommend.jpg" alt="vistor"/></a></li>
+                    <li class="recommend"><a href="www.baidu.com"><img src="imgs/tiny-recommend.jpg" alt="vistor"/></a></li>
+                    <li class="recommend"><a href="www.baidu.com"><img src="imgs/tiny-recommend.jpg" alt="vistor"/></a></li>
+                </ul>
+            </article>
+            <article class="recent-activity">
+                <span>和女神做朋友</span>
+                <img src="imgs/ladygod.jpg" alt=""/>
+                <button class="join btn">我要参加</button>
+                <button class="share btn">分享</button>
+            </article>
+            <article class="friend-birthday">
+                <span>好友生日</span>
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="javascript:void(0)">生日</a></li>
+                </ul>
+            </article>
+            <article class="functionality-in-site">
+                <span>站内功能</span>
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="functionality"><a href="javascript:void(0)">隐身挂机</a></li>
+                    <li class="functionality"><a href="javascript:void(0)">无线产品中心</a></li>
+                    <li class="functionality"><a href="javascript:void(0)">人人活动</a></li>
+                </ul>
+            </article>
+            <article class="renren-survey">
+                <span>人人网调查</span>
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="javascript:void(0)">人人小调查</a></li>
+                </ul>
+            </article>
+            <article class="time-machine">
+                <span>过往的今天</span>
+                <img src="imgs/timemachine.jpg" alt="advertise"/>
+
+            </article>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.js"></script>
+</div>
+</body>
+</html>
