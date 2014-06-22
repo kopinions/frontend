@@ -3,12 +3,45 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <style>
+        .mydatepicker{
+            width:210px;;
+            height: 150px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .mydatepicker li{
+            margin: 0px;
+            width: 14.2%;
+            height: 25px;
+            display: inline-block;
+            padding: 0px;
+            border: black solid 1px;
+            cursor: pointer;
+        }
+
+    </style>
+
 
 </head>
 <body>
 <a href="http://www.baidu.com">baidu.com</a>
 
+<input type="text" class="aaa"/>
+
+<div class="container datep">
+    <!--input-->
+</div>
 <script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
 <script src="buttoner.js"></script>
+<script src="js/datepicker.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".aaa").datepick();
+    });
+</script>
 </body>
 </html>
